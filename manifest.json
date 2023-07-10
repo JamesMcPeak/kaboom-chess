@@ -3,7 +3,7 @@
     "manifest_version": 3,
     "name": "Kaboom-Chess",
     "version": "0.0.1",
-    "author": "woodchuck13@gmx.com",
+    "author": "jmcpeak@gmx.com",
     "action": {
         "default_icon": {
             "16": "images/kaboom.png",
