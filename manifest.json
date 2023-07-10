@@ -1,0 +1,28 @@
+{
+
+    "manifest_version": 3,
+    "name": "Kaboom-Chess",
+    "version": "0.0.1",
+    "author": "woodchuck13@gmx.com",
+    "action": {
+        "default_icon": {
+            "16": "images/kaboom.png",
+            "24": "images/kaboom.png",
+            "32": "images/kaboom.png",
+            "64": "images/kaboom.png"
+        },
+        "default_title": "kaBOOOOOM"
+    },
+    "description": "Makes Atomic into Kaboom Chess",
+    "permissions": ["activeTab", "scripting", "tabs"],
+    "content_scripts":
+    [
+        {
+            "matches": ["*://*/*"],
+            "all_frames": true,
+            "js": ["kaboom.js"],
+            "run_at": "document_end"
+        }
+    ]
+
+}
